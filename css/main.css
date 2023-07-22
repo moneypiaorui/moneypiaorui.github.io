@@ -1,9 +1,31 @@
+div::-webkit-scrollbar {
+    display: none;
+}
+@keyframes fadein{
+    from{
+        z-index:-199;
+    }
+    to{
+        z-index:999;
+    }
+}
+@keyframes fadeout{
+    from{
+        z-index:999;
+    }
+    to{
+        z-index:-199;
+    }
+}
+
+
 #map {
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: 90vh;
 }
 
 body, #map {
+    
     /* background-image: url(https://www.natfrp.com/assets/rtfm-655e21d6.gif); */
 }
 
@@ -37,3 +59,61 @@ font-size: .8em; }
     margin-left: .6em; }
 
 /*# sourceMappingURL=index.css.map */
+
+
+#techers{
+    position: fixed;
+    left:10%;
+    z-index:999;
+    top:30%;
+    font-size:24px;
+    transition:0.5s;
+    /* margin: auto; */
+}
+#buttons{
+    position: fixed;
+    right: 0;
+    bottom: 70%;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+    z-index: 999;
+    background-color: #c3ebff;
+    -webkit-box-shadow: -2px 0 30px 2px rgba(72, 88, 117, 0.18);
+    -moz-box-shadow: -2px 0 30px 2px rgba(97, 105, 119, 0.18);
+    box-shadow: -2px 0 30px 2px rgba(23, 49, 93, 0.18);
+    border-radius: 18px 0 0 18px;
+    width: 60px;
+
+}
+#buttons p{
+    border-radius: 20%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:10px;
+}
+#buttons p:hover{
+    background-color: #a5dcf7;
+}
+
+
+#luqu{
+    height: 600px;
+    position: fixed;
+    right:10%;
+    z-index:999;
+    top:10%;
+    font-size:20px;
+    /* transform: rotate(360); */
+    background-color: rgba(127, 161, 201, 0.5);
+    padding: 20px;
+    border: #9dbbca 2px solid;
+    border-radius: 10px;
+    box-shadow: grey ;
+    overflow-y:scroll;
+    transition:0.5s;
+    /* margin: auto; */
+}

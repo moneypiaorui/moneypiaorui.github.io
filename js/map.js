@@ -9,6 +9,7 @@ Highcharts.each(data, function (d) {
     d.people = [];
 });
 
+//data数据处理
 for (let s of students) {
     provinces[s.province].value++;
     provinces[s.province].people.push(s)
@@ -67,8 +68,8 @@ subtitle: {
 tooltip: {
     useHTML: true,
     backgroundColor: '#357fee',
-    borderRadius: 5,
-    padding: 12,
+    borderRadius: 40,
+    padding: 10,
     style: {
         'color': '#dddddd',
         'cursor': 'default',
@@ -82,7 +83,7 @@ tooltip: {
 //高亮颜色及下方数据带
 colorAxis: {
     min: 0,
-    // max: 10,
+    max: 9,
     type: 'linear',
     minColor: '#ffffff',
     // maxColor: '#002ab5',

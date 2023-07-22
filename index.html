@@ -6,13 +6,30 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+    
     <!-- 图表容器 DOM -->
     <div id="map"></div>
-    
+    <div id="techers" style="display: none;opacity:0">
+        <p>语文：夏晓娟</p>
+        <p>数学：洪雨沛</p>
+        <p>英语：陈贇哲</p>
+        <p>物理：程兵</p>
+        <p>化学：余志学</p>
+        <p>生物：宋银</p>
+    </div>
+    <div id="luqu" style="display: none;opacity:0">
+        
+    </div>
+    <div id ="buttons">
+        <p id="bt1" onclick="techs()">任课老师</p>
+        <p id="bt2" onclick="Luqu()">录取总览</p>
+    <div>
     <!-- 引入 highcharts -->
-    <script src="https://img.hcharts.cn/highmaps/highmaps.js"></script>
-    <script src="https://img.hcharts.cn/highcharts/modules/drilldown.js"></script>
+    <script src="js/highmaps.js"></script>
+    <script src="js/drilldown.js"></script>
     <script src='js/nunjucks.min.js'></script>
+    <script src="js/exporting.src.js"></script>
+    <!-- <script src="js/default.js"></script> -->
 
     <script src='js/china.js'></script>
     <script src='js/province/zhejiang.js'></script>
@@ -49,5 +66,6 @@
     
     <script src='js/data.js'></script>
     <script src='js/map.js'></script>
+    <script src="js/more.js"></script>
 </body>
 </html>
