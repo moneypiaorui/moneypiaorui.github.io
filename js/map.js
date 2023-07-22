@@ -50,7 +50,7 @@ chart: {
 },
 
 title: {
-    text: '合肥一中2020级35班蹭饭地图',
+    text: '合肥一中2023级35班蹭饭地图',
     style: {"color": "#333333", "fontSize": "36px"}
 },
 
@@ -63,6 +63,7 @@ subtitle: {
     }
 },
 
+//悬浮信息窗口
 tooltip: {
     useHTML: true,
     backgroundColor: '#357fee',
@@ -78,18 +79,19 @@ tooltip: {
     formatter: formatter
 },
 
+//高亮颜色及下方数据带
 colorAxis: {
     min: 0,
-    max: 50,
+    // max: 10,
     type: 'linear',
     minColor: '#ffffff',
-    maxColor: '#006cee',
+    // maxColor: '#002ab5',
     stops: [
         [0, '#ffffff'],
-        [0.02, '#a4d9ee'],
-        [0.04, '#7ebaee'],
-        [0.1, '#357fee'],
-        [0.5, '#0c70ee'],
+        [0.2, '#a4d9ee'],
+        [0.4, '#7ebaee'],
+        [0.6, '#357fee'],
+        [0.8, '#0c70ee'],
         [1, '#006cee']
     ]
 },
@@ -106,11 +108,11 @@ series: [{
 drilldown:
     {
         activeDataLabelStyle: {
-            color: '#FFFFFF',
+            color: '#f60067',
             textDecoration:
                 'none',
             textShadow:
-                '0 0 3px #000000'
+                '0 0 3px #f60067'
         }
         ,
         drillUpButton: {
@@ -123,9 +125,9 @@ drilldown:
         },
         series: makeSeries()
     },
-
+//地图缩放
 mapNavigation: {
-    enabled: true,
+    enabled: false,
     buttonOptions:
         {
             verticalAlign: 'bottom'
