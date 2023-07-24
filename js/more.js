@@ -13,7 +13,7 @@ function techs(){
         if(luqu.style.display=="block"){
             luqu.style.opacity="0";
             luqu.style.top="100%"
-            
+            setTimeout(function(){luqu.style.display="none";luqu.style.top="0";luqu.style.bottom="100%"},500);      
         }
         setTimeout(function(){techers.style.opacity="1";techers.style.top="0";techers.style.bottom="0"},0);       
     }else{
@@ -30,7 +30,7 @@ function Luqu(){
         if(techers.style.display=="block"){
             techers.style.opacity="0";
             techers.style.top="100%"
-            
+            setTimeout(function(){techers.style.display="none";techers.style.top="0";techers.style.bottom="100%"},500);   
         }
         setTimeout(function(){luqu.style.opacity="1";luqu.style.top="0";luqu.style.bottom="0"},0);       
     }else{
