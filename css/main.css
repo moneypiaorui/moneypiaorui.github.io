@@ -26,13 +26,32 @@ div::-webkit-scrollbar {
     }
 }
 
+.icon{
+    height: 220px;
+    width: 220px;
+    z-index: 100;
+    position:absolute;
+    top: 120px;
+    background-size: cover;
+    transition: 0.5s;
+}
+#l_icon{
+    float: left;
+    left: 70px;
+    background-image:url(../imgs/yizhong.png);
+}
+#r_icon{
+    /* float: right; */
+    right: 70px;
+    background-image: url(../imgs/banhui.png);
+}
 
 #map {
     width: auto;
     height: 90vh;
 }
 
-body, #map {
+body #map {
     
     /* background-image: url(https://www.natfrp.com/assets/rtfm-655e21d6.gif); */
 }
@@ -70,7 +89,8 @@ font-size: .8em; }
 
 
 #techers{
-    height: 500px;
+    /* background: url("https://i1.hdslb.com/bfs/archive/d0ea1855ea8764c8d23fa52aceaa72a1a6d86491.jpg@672w_378h_1c_!web-home-common-cover.webp"); */
+    height: 560px;
     width:700px;
     position: fixed;
     z-index:999;
@@ -97,19 +117,21 @@ font-size: .8em; }
     margin: 50px 50px;
 }
 #techers img{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 130px;
     display: block;
     border-radius: 10%;
 }
 #techers span{
     width: auto;
+    display: inline-block;
+    text-align: center;
 }
 
 #buttons{
     position: fixed;
     right: 0;
-    bottom: 70%;
+    bottom: 60%;
     -webkit-transform: translateY(50%);
     -moz-transform: translateY(50%);
     -ms-transform: translateY(50%);

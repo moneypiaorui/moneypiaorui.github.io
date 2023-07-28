@@ -37,22 +37,33 @@ for (let p of Object.values(provinces)) {
 let map = new Highcharts.Map('map', {
 chart: {
     events: {
+        //下钻
         drilldown: function (e) {
             let name = e.point.name;
             this.setTitle(null, {text: name});
+            for( var its of document.getElementsByClassName("icon")){
+                its.style.opacity="0";
+                setTimeout('its.style.display="none"',500);
+            }
         },
         drillup: function () {
             data = Highcharts.maps['cn/china'];
             this.setTitle(null, {
-                text: '中国'
+                text: '中国',
+                // fontSize:"150px"
             });
+            for( var its of document.getElementsByClassName("icon")){
+                its.style.display="";
+                its.style.opacity="1";
+                
+            }
         }
     }
 },
 
 title: {
-    text: '合肥一中2023级35班蹭饭地图',
-    style: {"color": "#333333", "fontSize": "36px"}
+    text: '2023届35班蹭饭地图',
+    style: {"color": "#333333", "fontSize": "36px",}
 },
 
 subtitle: {
@@ -64,10 +75,11 @@ subtitle: {
     }
 },
 
-//悬浮信息窗口
+//悬浮信息窗口(提示工具)
 tooltip: {
     useHTML: true,
     backgroundColor: '#357fee',
+    // opacity:0.8,
     borderRadius: 40,
     padding: 10,
     style: {
@@ -122,7 +134,10 @@ drilldown:
                 {
                     x: 0,
                     y: 60
-                }
+                },
+            style:{
+                font:"bolder 50px"
+            }
         },
         series: makeSeries()
     },
