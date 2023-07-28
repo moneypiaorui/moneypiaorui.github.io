@@ -48,7 +48,7 @@ div::-webkit-scrollbar {
 
 #map {
     width: auto;
-    height: 90vh;
+    height: 95vh;
 }
 
 body #map {
@@ -64,7 +64,8 @@ body #map {
     flex-direction: column; }
 
 .series {
-font-size: .8em; }
+font-size: 18px ;
+}
 
 .profile {
 display: flex;

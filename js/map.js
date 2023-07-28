@@ -63,13 +63,14 @@ chart: {
 
 title: {
     text: '2023届35班蹭饭地图',
-    style: {"color": "#333333", "fontSize": "36px",}
+    y:120,
+    style: {"position":"block",color:"#333333", "fontSize": "36px"}
 },
 
 subtitle: {
     text: '中国',
     floating: true,
-    y: 75,
+    y: 160,
     style: {
         fontSize: '26px'
     }
