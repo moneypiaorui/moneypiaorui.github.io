@@ -3,7 +3,7 @@
 techers=document.getElementById("techers");
 luqu=document.getElementById("luqu");
 for(let s of students){
-    luqu.innerHTML+=("<ul><p>"+s.name+"</p><p>"+s.school+"</p><p>"+s.city+"</p><p>"+s.province+'</p></sapn>');
+    luqu.innerHTML+=("<ul><p>"+s.name+"</p><p>"+s.school+"</p><p>"+s.city+"</p><p>"+s.province+'</p><p>'+s.major+'</p></span>');
 }
 
 

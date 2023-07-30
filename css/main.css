@@ -1,6 +1,21 @@
 div::-webkit-scrollbar {
     display: none;
 }
+
+@font-face {
+    font-family:demo1;
+    src:url("../font/AaLingJunTi-2.ttf")
+  }
+  @font-face {
+    font-family:demo2;
+    src:url("../font/YeZiGongChangQingLangShouJinTi-2.ttf") 
+  }
+  @font-face {
+    font-family:demo3;
+    src:url("../font/SanJiYaYuanJianTi-Regular-2.ttf") 
+  }
+
+
 @keyframes fadein{
     from{
         opacity: 0;
@@ -109,6 +124,7 @@ font-size: .8em; }
     box-shadow: grey ;
     overflow-y:scroll;
     transition:0.5s;
+    font-family:"demo1";
 }
 .kuang{
     
@@ -130,6 +146,7 @@ font-size: .8em; }
 }
 
 #buttons{
+    font-family:"demo3";
     position: fixed;
     right: 0;
     bottom: 60%;
@@ -153,6 +170,7 @@ font-size: .8em; }
     margin-top: 10px;
     margin-bottom: 10px;
     padding:10px;
+    font-size: 20px;
 }
 #buttons p:hover{
     background-color: #a5dcf7;
@@ -161,7 +179,7 @@ font-size: .8em; }
 
 #luqu{
     height: 600px;
-    width:480px;
+    width:780px;
     position: fixed;
     left: 0;
     right: 0;
@@ -180,6 +198,7 @@ font-size: .8em; }
     overflow-y:scroll;
     transition:0.5s;
     /* margin: auto; */
+    font-family: "demo1";
 }
 #luqu ul{
     margin:0;
@@ -192,4 +211,7 @@ font-size: .8em; }
 }
 #luqu ul :nth-child(2){
     width: 200px;
+}
+#luqu ul :nth-child(5){
+    width: auto;
 }

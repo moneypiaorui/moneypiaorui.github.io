@@ -64,7 +64,7 @@ chart: {
 title: {
     text: '2023届35班蹭饭地图',
     y:120,
-    style: {"position":"block",color:"#333333", "fontSize": "36px"}
+    style: {"position":"block",color:"#333333", "fontSize": "36px","fontFamily":"demo1"}
 },
 
 subtitle: {
@@ -72,7 +72,8 @@ subtitle: {
     floating: true,
     y: 160,
     style: {
-        fontSize: '26px'
+        fontSize: '26px',
+        "fontFamily":"demo1"
     }
 },
 
@@ -86,9 +87,10 @@ tooltip: {
     style: {
         'color': '#dddddd',
         'cursor': 'default',
-        'fontSize': '14px',
+        'fontSize': '20px',
         'pointerEvents': 'none',
-        'whiteSpace': 'nowrap'
+        'whiteSpace': 'nowrap',
+        "fontFamily":"demo2"
     },
     formatter: formatter
 },
